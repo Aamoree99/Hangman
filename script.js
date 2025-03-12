@@ -274,7 +274,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const btnContainer = document.getElementById("length-buttons");
 
-  for (let i = 3; i <= 10; i++) {
+  for (let i = 3; i <= 15; i++) {
     const btn = document.createElement("button");
     btn.textContent = i;
     btn.onclick = () => selectLength(i, btn);
