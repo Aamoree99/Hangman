@@ -70,7 +70,14 @@ function generateInputs() {
     input.className = "letter-box";
     input.type = "text";
     input.maxlength="1"
-    input.addEventListener("input", fetchWords);
+    input.addEventListener("input", function () {
+      const next = input.nextElementSibling;
+      if (input.value.length === 1 && next && next.tagName === 'INPUT') {
+        next.focus();
+      }
+      fetchWords();
+    });
+    
     container.appendChild(input);
   }
   const firstInput = container.querySelector("input");
