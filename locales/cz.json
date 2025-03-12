@@ -1,0 +1,20 @@
+{
+    "title": "💀 Hangman Deluxe",
+    "gameTab": "🎮 Hra",
+    "helperTab": "🧠 Nápověda",
+    "startGame": "Začít hru",
+    "errors": "Chyby",
+    "victory": "🎉 Výhra! Slovo",
+    "defeat": "💀 Prohra. Slovo bylo",
+    "playAgain": "Hrát znovu",
+    "wordLengthPrompt": "Zvol délku slova:",
+    "orManual": "Nebo zadej ručně:",
+    "start": "Start",
+    "reset": "Resetovat",
+    "excludeLabel": "Vyloučit písmena:",
+    "suggestionPlaceholder": "Návrhy se zobrazí zde...",
+    "letterHintIntro": "🔍 Můžeš zkusit hádat:",
+    "analysisBasedOn": "📊 Analýza na základě",
+    "words": "slov"
+  }
+  

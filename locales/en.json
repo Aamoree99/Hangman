@@ -1,0 +1,19 @@
+{
+  "title": "💀 Hangman Deluxe",
+  "gameTab": "🎮 Game",
+  "helperTab": "🧠 Helper",
+  "startGame": "Start Game",
+  "errors": "Errors",
+  "victory": "🎉 Victory! Word",
+  "defeat": "💀 Defeat. The word was",
+  "playAgain": "Play Again",
+  "wordLengthPrompt": "Choose word length:",
+  "orManual": "Or enter manually:",
+  "start": "Start",
+  "reset": "Reset",
+  "excludeLabel": "Exclude letters:",
+  "suggestionPlaceholder": "Suggestions will appear here...",
+  "letterHintIntro": "🔍 You could try guessing:",
+  "analysisBasedOn": "📊 Based on",
+  "words": "words"
+}

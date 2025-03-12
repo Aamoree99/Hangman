@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E%F0%9F%92%80%3C/text%3E%3C/svg%3E">
+  <title data-i18n="title">Hangman Deluxe · Aamoree99</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <h1 data-i18n="title">💀 Hangman Deluxe</h1>
+
+    <div class="tabs">
+      <div class="tab active" onclick="switchMode('game')" data-i18n="gameTab">🎮 Игра</div>
+      <div class="tab" onclick="switchMode('helper')" data-i18n="helperTab">🧠 Помощник</div>
+    </div>
+
+    <!-- Game Mode -->
+    <div id="game-mode">
+      <button class="btn btn-primary" onclick="startGame()" data-i18n="startGame">Начать игру</button>
+      <div id="game-layout">
+        <div id="left-side">
+          <div class="hidden-word" id="word-display"></div>
+          <div style="text-align:center;">
+            <input type="text" id="guess-input" class="letter-box" maxlength="1" disabled />
+
+          </div>
+          <div id="errors" data-i18n="errors">Ошибки: —</div>
+          <div id="game-status" style="display:none;"></div>
+        </div>
+        <div id="right-side">
+          <canvas id="hangman-canvas" width="200" height="250"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Helper Mode -->
+    <div id="helper-mode" style="display:none;">
+      <div style="text-align:center; font-size:18px; margin-bottom:12px;" data-i18n="wordLengthPrompt">Выбери длину слова:</div>
+      <div class="word-length-buttons" id="length-buttons">
+      </div>
+
+      <div class="helper-buttons">
+        <button class="btn btn-danger" onclick="resetHelper()" data-i18n="reset">Обнулить</button>
+      </div>
+
+      <div id="inputs"></div>
+
+      <div id="excluded-block" style="text-align:center; margin-top: 20px;">
+        <label for="excluded-letters" data-i18n="excludeLabel">Исключить буквы:</label><br>
+        <input
+          type="text"
+          id="excluded-letters"
+          class="letter-box excluded-input"
+          oninput="fetchWords()"
+          style="min-width: 200px; max-width: 400px; width: 100%;"
+        />
+      </div>
+
+      <div id="letter-hint"></div>
+      <div id="suggestions" data-i18n="suggestionPlaceholder">Подсказки появятся здесь...</div>
+    </div>
+
+    <footer>
+      © Aamoree99 · Hangman Deluxe
+        <select id="lang-select"></select>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
