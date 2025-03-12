@@ -3,7 +3,8 @@
 **Hangman Deluxe** — это стильная, интерактивная версия классической игры «Виселица» с поддержкой локализации, неоновой темой и встроенным помощником.  
 Разработано с вниманием к эстетике — визуально чисто, современно и удобно.
 
-▶️ **Попробовать вживую**: [Hangman Deluxe на GitHub Pages](https://aamoree99.github.io/Hangman/)
+▶️ <strong>Попробовать вживую:</strong> <a href="https://aamoree99.github.io/Hangman/" target="_blank" rel="noopener noreferrer">Hangman Deluxe на GitHub Pages</a>
+
 
 ## 🚀 Особенности
 
@@ -17,7 +18,9 @@
 ## 🌍 Поддерживаемые языки
 
 - Русский `ru`
-- Английский `en`  
+- Английский `en`
+- Украинский `ua`
+- Чешский `cz`  
 (Можно выбрать в футере страницы)
 
 ## 📦 Структура проекта
@@ -27,6 +30,8 @@
    └─ locales/
        ├─ ru.json
        ├─ en.json
+       ├─ ua.json
+       ├─ cz.json
        └─ index.json
 📄 index.html
 📄 styles.css
@@ -89,7 +94,9 @@ MIT License. Свободно используй, кастомизируй, до
 ## 🌍 Supported Languages
 
 - Russian `ru`
-- English `en`  
+- English `en`
+- Ukrainian `ua`
+- Czech `cz`  
 (Selectable in the footer)
 
 ## 📦 Project Structure
@@ -99,6 +106,8 @@ MIT License. Свободно используй, кастомизируй, до
    └─ locales/
        ├─ ru.json
        ├─ en.json
+       ├─ ua.json
+       ├─ cz.json
        └─ index.json
 📄 index.html
 📄 styles.css
